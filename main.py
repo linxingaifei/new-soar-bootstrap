@@ -1,3 +1,17 @@
+def print_banner():
+    print("=" * 60)
+    print("SOAR Cloud-Managed Edge Router Bootstrap Tool")
+    print("SOAR 云管路由系统 · Edge 初始化工具")
+    print("-" * 60)
+    print("Mode      : Bootstrap / One-time Execution")
+    print("Security  : No Backdoor · Least Privilege")
+    print("Control   : HTTPS (Edge → Cloud)")
+    print("Target    : VyOS Edge Device")
+    print("=" * 60)
+    print()
+
+print_banner()
+
 from config import parse_args
 from i18n import init, t
 import cloud
